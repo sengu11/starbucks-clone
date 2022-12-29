@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* 변경사항
+화면이 줄어들면 상단 메뉴 아이콘으로 변경
+-> 웹 상 메뉴와 모바일 아이콘 매치하기
+
+1. 3번째 전체메뉴 아이콘 = 상단메뉴 + 검색창 스와이프 메뉴변경
+1-1 
+모바일-웹 매치해서 아이콘 넣어주기
+*/
+
+
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-size: 1rem;
+}
+
+body,ul,li,h1{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+}
+
+header {
+    border:none
+}
+
+header > div {
+    width:100%;
+}
+
+header > div h1 {
+    padding:.8125rem 0 .75rem .625rem;
+}
+
+header h1 img {
+    width:2.8125rem;
+}
+
+header > div nav {
+    display: none;
+}
+
+header > div .spot {
+    top:1.3rem;
+    right:4.5rem;
+}
+
+header > div .spot .web-none{
+    display: inline-block;
+    font-size: 2rem;
+}
+
+header > div .spot li a {
+    padding:0;
+}
+
+header > div .spot li ~ li {
+    padding-left:1.6875rem;
+}
+
+header > div .spot li ~ li a::after {
+    display: none;
+}
+
+header .total {
+    display: inline-block;
+    position: absolute;
+    top:1.3rem;
+    right:0.75rem;
+}
+
+header .total i {
+    font-size: 2rem;
+}
+
+
+header > div .spot li:nth-child(2),
+header > div .spot li:nth-child(3),
+header > div .spot li:nth-child(5){
+    display: none;
+}
+
+header .total span,
+header > div .spot li span {
+    position: absolute;
+    left:-4000%;
+}
