@@ -128,7 +128,63 @@ header .total {
     display: none;
 }
 
+/*비주얼*/
 
+.visual{
+    background: url(../images/bg_visual.jpg) no-repeat center top;
+}
+
+.visual .img-box {
+    position:relative;
+    width:100%;
+    max-width:54.5rem;
+    height:32.3rem;
+    margin:0 auto;
+}
+.visual > div div {
+    position:absolute;
+}
+
+.visual > div div.img1 {
+    left:0;
+    top:4rem;
+    z-index: 3;
+}
+
+.visual > div div.img1 img {
+    display: block;
+    padding:0 0 2.3rem;
+}
+
+.visual > div .img1 a {
+    display: inline-block;
+    width:6rem;
+    border: 2px solid #3a62ad;
+    text-align: center;
+    line-height: 1.7rem;
+    border-radius:3px;
+    font-size:0.65rem;
+    color:#3a62ad;
+}
+
+.visual > div div.img2 {
+    left:12%;
+    top:8.7rem;
+    z-index: 3;
+}
+
+.visual > div div.img3 {
+    left:50%;
+    top:3.8rem;
+}
+
+.visual > div div.img4 {
+    left:64%;
+    top:15.75rem;
+    z-index: 5;
+}
+
+/*리워드*/
 
 .rewards {
     /*방향 ,색상 및 적용할 부분 % = 여기서는 50%가 부딪히면서 반으로 잘라진 느낌으로 표현된다*/
